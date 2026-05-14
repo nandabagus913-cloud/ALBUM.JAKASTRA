@@ -3,71 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album Jakastra - Pondok Pesantren Al-Falah</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Album Jakastra — Al-Falah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1><i class="fas fa-graduation-cap"></i> Album Jakastra</h1>
-            <p>Pondok Pesantren Al-Falah - Tahun Ajaran 2024/2025</p>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-blobs" aria-hidden="true">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="header-content">
+            <div class="badge-pill">✦ Tahun Ajaran 2024/2025</div>
+            <h1 class="header-title">Album <em>Jakastra</em></h1>
+            <p class="header-sub">Pondok Pesantren Al-Falah</p>
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-num" id="totalCount">38</span>
+                    <span class="stat-label">Santri</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">2025</span>
+                    <span class="stat-label">Angkatan</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="search-section">
-        <div class="container">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Cari nama atau alamat santri...">
-                <i class="fas fa-search"></i>
+    <!-- STICKY SEARCH -->
+    <div class="search-sticky" id="searchSticky">
+        <div class="search-inner">
+            <div class="search-field">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Cari nama atau alamat…" autocomplete="off" spellcheck="false" aria-label="Cari santri">
+                <button class="clear-btn" id="clearBtn" aria-label="Hapus pencarian" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                </button>
             </div>
+            <span class="result-badge" id="resultBadge"></span>
         </div>
-    </section>
+    </div>
 
-    <section class="gallery-section">
-        <div class="container">
-            <div class="gallery-grid" id="galleryGrid">
-                </div>
+    <!-- GALLERY -->
+    <main class="gallery-main">
+        <div class="gallery-wrap">
+            <div class="gallery-grid" id="galleryGrid"></div>
 
-            <div class="no-results" id="noResults">
-                <i class="fas fa-search"></i>
+            <div class="no-results hidden" id="noResults">
+                <div class="no-results-emoji">🔍</div>
                 <h3>Tidak ditemukan</h3>
-                <p>Tidak ada santri yang sesuai dengan pencarian Anda</p>
+                <p>Coba kata kunci yang berbeda</p>
             </div>
 
-            <div class="pagination-container">
-                <ul class="pagination" id="pagination">
-                    </ul>
+            <div class="pagination-wrap hidden" id="paginationWrap">
+                <ul class="pagination" id="pagination"></ul>
             </div>
         </div>
-    </section>
+    </main>
 
-    <div class="modal fade" id="imageModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img id="modalImage" src="" alt="" class="modal-image">
-                    <div class="modal-info">
-                        <h3 id="modalName"></h3>
-                        <p class="rapor-address">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span id="modalAddress"></span>
-                        </p>
-                    </div>
-                </div>
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Detail santri">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-card" id="lightboxCard">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="lightbox-img-wrap">
+                <div class="img-shimmer" id="imgShimmer"></div>
+                <img id="lightboxImg" src="" alt="" loading="lazy">
+            </div>
+            <div class="lightbox-info">
+                <h2 id="lightboxName"></h2>
+                <p class="lightbox-address">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M20 10c0 6-8 13-8 13s-8-7-8-13a8 8 0 0 1 16 0Z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span id="lightboxAddress"></span>
+                </p>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Jakastra. All rights reserved.</p>
-        </div>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p class="footer-brand">Album Jakastra</p>
+        <p class="footer-copy">© 2025 Pondok Pesantren Al-Falah · All rights reserved</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
