@@ -1,338 +1,302 @@
-// Data santri
-        const santriData = [{
-            name: "Ahmad Samsudin",
-            address: "Ds.Lalan Musi BanyuAsin Sumatera Selatan",
-            imageUrl: "A. Samsudin.JPG"
-        }, {
-            name: "Angga Riski Ramdani",
-            address: "Jambi",
-            imageUrl: "Kiki.JPG"
-        }, {
-            name: "Bagus Fadlilah Say Putra",
-            address: "Lampung",
-            imageUrl: "B.Fadil.JPG"
-        }, {
-            name: "Danil Ali Sabila",
-            address: "Ds.Fajar Indah Muara Enim Sumatera Selatan",
-            imageUrl: "Danil.JPG"
-        }, {
-            name: "Dzikri Nur Fajar",
-            address: "Jalur BanyuAsin Sumatera Selatan",
-            imageUrl: "Dzikri.JPG"
-        }, {
-            name: "Haryadi",
-            address: "Ds.Trans Aur Muara Enim Sumatera Selatan",
-            imageUrl: "Hariyadi.JPG"
-        }, {
-            name: "Imam Rofi'i",
-            address: "Ds.Sumber Rahayu Muara Enim Sumatera Selatan",
-            imageUrl: "Imam Rofi.JPG"
-        }, {
-            name: "Joko Prasetio",
-            address: "Merangin Jambi",
-            imageUrl: "Joko.JPG"
-        }, {
-            name: "Hendi Permana",
-            address: "Ds.Pal 3 Pali Sumatera Selatan",
-            imageUrl: "hendi.JPG"
-        }, {
-            name: "Mu'azd Abdur Ridho",
-            address: "Ds.Karya Mulya Prabumulih Sumatera Selatan",
-            imageUrl: "Muazd abdur ridho .JPG"
-        }, {
-            name: "Muhammad Andri Habibi",
-            address: "Ds.Payakabung Ogan Ilir Sumatera Selatan",
-            imageUrl: "M. A. Habibi.JPG"
-        }, {
-            name: "Muhammad Imam Hafas",
-            address: "Ds.Mekar Jaya",
-            imageUrl: "M. Imam Havas.JPG"
-        }, {
-            name: "Muhammad Majid",
-            address: "Ds.Gaung Telang Muara Enim Sumatera Selatan",
-            imageUrl: "M.Majid.JPG"
-        }, {
-            name: "Muhammad Syauqi Khotibul Umam",
-            address: "Ds.Segayam Muara Enim Sumatera Selatan",
-            imageUrl: "M. Syauqi.JPG"
-        }, {
-            name: "Nanda Bagus Setiawan",
-            address: "Ds.Jaya Mulya OkuTimur Sumatera Selatan",
-            imageUrl: "Nanda B.JPG"
-        }, {
-            name: "Rabil Afraja",
-            address: "Ds.Paya Angus Muara Enim Sumatera Selatan",
-            imageUrl: "RABIL.JPG"
-        }, {
-            name: "Riski Dwi Saputra",
-            address: "Ds.Fajar Indah Muara Enim Sumatera Selatan",
-            imageUrl: "Riski Dwi.JPG"
-        }, {
-            name: "Robbul Insan",
-            address: "Ds.Penandingan Muara Enim Sumatera Selatan",
-            imageUrl: "Robbul insan.jpg"
-        }, {
-            name: "Saef Fikran Al-Adzkia",
-            address: "Ds.Air Limau Muara Enim Sumatera Selatan",
-            imageUrl: "Saef.JPG"
-        }, {
-            name: "Zam Zam Ramadhan",
-            address: "Kota Prabumulih",
-            imageUrl: "Zam zam.JPG"
-        }, {
-            name: "Ahmad Nasrin",
-            address: "Ds.Tanjung Muning Muara Enim Sumatera Selatan",
-            imageUrl: "A.Nasirin.JPG"
-        }, {
-            name: "Ario",
-            address: "Ds.Rejo Sari Muba Sumatera Selatan",
-            imageUrl: "Ario.JPG"
-        }, {
-            name: "Bayu Pamungkas",
-            address: "Ds.KertaMukti OKI Sumatera Selatan",
-            imageUrl: "Bayu Pamungkas.JPG"
-        }, {
-            name: "Fachri Jamil",
-            address: "Ds.KertaMukti OKI Sumatera Selatan",
-            imageUrl: "Fachri jamil.JPG"
-        }, {
-            name: "Miko Andi Saputra",
-            address: "Ds.Bangun Sari Muara Enim Sumatera Selatan",
-            imageUrl: "Miko Andi Saputra.JPG"
-        }, {
-            name: "Muhammad Bayu Kusumo Aji",
-            address: "Ds.Bangun Sari Muara Enim Sumatera Selatan",
-            imageUrl: "M.Bayu K.JPG"
-        }, {
-            name: "Riyadi Dibiya",
-            address: "Kota Palembang",
-            imageUrl: "Riyadi.JPG"
-        }, {
-            name: "Azwil Yoga Pratama",
-            address: "Gunung Megang Muara Enim Sumatera Selatan",
-            imageUrl: "Azwil.JPG"
-        }, {
-            name: "Abdul Muzakir",
-            address: "Ds.Air Talas Muara Enim Sumatera Selatan",
-            imageUrl: "A. Muzakir.JPG"
-        }, {
-            name: "Ahmad Fikri",
-            address: "Ds.Karang Endah Muara Enim Sumatera Selatan",
-            imageUrl: "A.Fikri.JPG"
-        }, {
-            name: "Anggi Franitar",
-            address: "Ds.Rejo Sari Musi BanyuAsin Sumatera Selatan",
-            imageUrl: "Anggi franitar.jpg"
-        }, {
-            name: "M.Vikarullah",
-            address: "Ds.Sumber Mulyo OkuTimur Sumatera Selatan",
-            imageUrl: "M. Vikar.JPG"
-        }, {
-            name: "Miftahul Khoir",
-            address: "Ds.Panca Mukti BanyuAsin Sumatera Selatan",
-            imageUrl: "Khoir.JPG"
-        }, {
-            name: "M.Abdul Wahab",
-            address: "Ds.Suka Jaya Blok B Muara Enim Sumatera Selatan",
-            imageUrl: "M. Abdul Wahab.JPG"
-        }, {
-            name: "Leo Saputra",
-            address: "Ds.Air Keruh Muara Enim Sumatera Selatan",
-            imageUrl: "Leo.JPG"
-        }, {
-            name: "Wahyudi Rahman",
-            address: "Ds.Gaung Asam Muara Enim Sumatera Selatan",
-            imageUrl: "Wahyudi Rahman.JPG"
-        }, {
-            name: "Muhammad Sidik Maulana",
-            address: "Ds.Bangun Sari Muara Enim Sumatera Selatan",
-            imageUrl: "M. Sidiq.JPG"
-        }, {
-            name: "Muhammad Buyung",
-            address: "Ds.Rejo Sari Musi Banyu Asin Sumatera Selatan",
-            imageUrl: "M.Buyung.JPG"
-        }, ];
+'use strict';
 
-        // Objek utama untuk mengelola semua fungsi
-        const app = {
-            currentPage: 1,
-            itemsPerPage: 12,
-            filteredData: [],
-            
-            // Elemen DOM yang sering digunakan
-            elements: {
-                galleryGrid: document.getElementById('galleryGrid'),
-                pagination: document.getElementById('pagination'),
-                noResults: document.getElementById('noResults'),
-                searchInput: document.getElementById('searchInput'),
-                modalImage: document.getElementById('modalImage'),
-                modalName: document.getElementById('modalName'),
-                modalAddress: document.getElementById('modalAddress'),
-                imageModal: new bootstrap.Modal(document.getElementById('imageModal'))
-            },
+/* ─── DATA SANTRI (38 lengkap) ─── */
+const santriData = [
+    { name: "Ahmad Samsudin",            address: "Ds. Lalan, Musi Banyuasin, Sumatera Selatan",            img: "A. Samsudin.JPG" },
+    { name: "Angga Riski Ramdani",       address: "Jambi",                                                  img: "Kiki.JPG" },
+    { name: "Bagus Fadlilah Say Putra",  address: "Lampung",                                                 img: "B.Fadil.JPG" },
+    { name: "Danil Ali Sabila",          address: "Ds. Fajar Indah, Muara Enim, Sumatera Selatan",          img: "Danil.JPG" },
+    { name: "Dzikri Nur Fajar",          address: "Jalur Banyuasin, Sumatera Selatan",                      img: "Dzikri.JPG" },
+    { name: "Haryadi",                   address: "Ds. Trans Aur, Muara Enim, Sumatera Selatan",            img: "Hariyadi.JPG" },
+    { name: "Imam Rofi'i",              address: "Ds. Sumber Rahayu, Muara Enim, Sumatera Selatan",        img: "Imam Rofi.JPG" },
+    { name: "Joko Prasetio",             address: "Merangin, Jambi",                                        img: "Joko.JPG" },
+    { name: "Hendi Permana",             address: "Ds. Pal 3, Pali, Sumatera Selatan",                     img: "hendi.JPG" },
+    { name: "Mu'azd Abdur Ridho",       address: "Ds. Karya Mulya, Prabumulih, Sumatera Selatan",          img: "Muazd abdur ridho .JPG" },
+    { name: "Muhammad Andri Habibi",     address: "Ds. Payakabung, Ogan Ilir, Sumatera Selatan",            img: "M. A. Habibi.JPG" },
+    { name: "Muhammad Imam Hafas",       address: "Ds. Mekar Jaya",                                         img: "M. Imam Havas.JPG" },
+    { name: "Muhammad Majid",            address: "Ds. Gaung Telang, Muara Enim, Sumatera Selatan",         img: "M.Majid.JPG" },
+    { name: "Muhammad Syauqi Khotibul Umam", address: "Ds. Segayam, Muara Enim, Sumatera Selatan",         img: "M. Syauqi.JPG" },
+    { name: "Nanda Bagus Setiawan",      address: "Ds. Jaya Mulya, OKU Timur, Sumatera Selatan",           img: "Nanda B.JPG" },
+    { name: "Rabil Afraja",              address: "Ds. Paya Angus, Muara Enim, Sumatera Selatan",          img: "RABIL.JPG" },
+    { name: "Riski Dwi Saputra",         address: "Ds. Fajar Indah, Muara Enim, Sumatera Selatan",         img: "Riski Dwi.JPG" },
+    { name: "Robbul Insan",              address: "Ds. Penandingan, Muara Enim, Sumatera Selatan",          img: "Robbul insan.jpg" },
+    { name: "Saef Fikran Al-Adzkia",    address: "Ds. Air Limau, Muara Enim, Sumatera Selatan",           img: "Saef.JPG" },
+    { name: "Zam Zam Ramadhan",          address: "Kota Prabumulih",                                        img: "Zam zam.JPG" },
+    { name: "Ahmad Nasrin",              address: "Ds. Tanjung Muning, Muara Enim, Sumatera Selatan",       img: "A.Nasirin.JPG" },
+    { name: "Ario",                      address: "Ds. Rejo Sari, Musi Banyuasin, Sumatera Selatan",       img: "Ario.JPG" },
+    { name: "Bayu Pamungkas",            address: "Ds. Kerta Mukti, OKI, Sumatera Selatan",                img: "Bayu Pamungkas.JPG" },
+    { name: "Fachri Jamil",              address: "Ds. Kerta Mukti, OKI, Sumatera Selatan",                img: "Fachri jamil.JPG" },
+    { name: "Miko Andi Saputra",         address: "Ds. Bangun Sari, Muara Enim, Sumatera Selatan",         img: "Miko Andi Saputra.JPG" },
+    { name: "Muhammad Bayu Kusumo Aji",  address: "Ds. Bangun Sari, Muara Enim, Sumatera Selatan",         img: "M.Bayu K.JPG" },
+    { name: "Riyadi Dibiya",             address: "Kota Palembang",                                         img: "Riyadi.JPG" },
+    { name: "Azwil Yoga Pratama",        address: "Gunung Megang, Muara Enim, Sumatera Selatan",            img: "Azwil.JPG" },
+    { name: "Abdul Muzakir",             address: "Ds. Air Talas, Muara Enim, Sumatera Selatan",            img: "A. Muzakir.JPG" },
+    { name: "Ahmad Fikri",               address: "Ds. Karang Endah, Muara Enim, Sumatera Selatan",         img: "A.Fikri.JPG" },
+    { name: "Anggi Franitar",            address: "Ds. Rejo Sari, Musi Banyuasin, Sumatera Selatan",       img: "Anggi franitar.jpg" },
+    { name: "M. Vikarullah",             address: "Ds. Sumber Mulyo, OKU Timur, Sumatera Selatan",         img: "M. Vikar.JPG" },
+    { name: "Miftahul Khoir",            address: "Ds. Panca Mukti, Banyuasin, Sumatera Selatan",          img: "Khoir.JPG" },
+    { name: "M. Abdul Wahab",            address: "Ds. Suka Jaya Blok B, Muara Enim, Sumatera Selatan",    img: "M. Abdul Wahab.JPG" },
+    { name: "Leo Saputra",               address: "Ds. Air Keruh, Muara Enim, Sumatera Selatan",            img: "Leo.JPG" },
+    { name: "Wahyudi Rahman",            address: "Ds. Gaung Asam, Muara Enim, Sumatera Selatan",           img: "Wahyudi Rahman.JPG" },
+    { name: "Muhammad Sidik Maulana",    address: "Ds. Bangun Sari, Muara Enim, Sumatera Selatan",         img: "M. Sidiq.JPG" },
+    { name: "Muhammad Buyung",           address: "Ds. Rejo Sari, Musi Banyuasin, Sumatera Selatan",       img: "M.Buyung.JPG" },
+];
 
-            // Data untuk pesan sambutan
-            welcomeMessage: {
-                name: "Selamat Datang!",
-                address: "Selamat datang di Album Jakastra. Anda dapat melihat-lihat foto dan menggunakan fitur pencarian di atas untuk menemukan Foto tertentu. 😊",
-                imageUrl: "Gambar WhatsApp 2025-09-20 pukul 15.43.53_e334c758.jpg"
-            },
+/* ─── APP STATE ─── */
+const state = {
+    filtered: [...santriData],
+    page: 1,
+    perPage: 12,
+    searchTerm: '',
+};
 
-            // Fungsi untuk merender kartu galeri
-            renderGallery() {
-                const { galleryGrid, noResults } = this.elements;
-                const startIndex = (this.currentPage - 1) * this.itemsPerPage;
-                const endIndex = startIndex + this.itemsPerPage;
-                const pageData = this.filteredData.slice(startIndex, endIndex);
+/* ─── DOM REFS ─── */
+const $  = id => document.getElementById(id);
+const el = {
+    grid:         $('galleryGrid'),
+    pagination:   $('pagination'),
+    paginationWrap: $('paginationWrap'),
+    noResults:    $('noResults'),
+    search:       $('searchInput'),
+    clearBtn:     $('clearBtn'),
+    resultBadge:  $('resultBadge'),
+    totalCount:   $('totalCount'),
+    lightbox:     $('lightbox'),
+    lbBackdrop:   $('lightboxBackdrop'),
+    lbCard:       $('lightboxCard'),
+    lbClose:      $('lightboxClose'),
+    lbImg:        $('lightboxImg'),
+    lbName:       $('lightboxName'),
+    lbAddress:    $('lightboxAddress'),
+    imgShimmer:   $('imgShimmer'),
+    searchSticky: $('searchSticky'),
+};
 
-                galleryGrid.innerHTML = '';
+/* ─── ICON SVG ─── */
+const PIN_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 13-8 13s-8-7-8-13a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`;
+const EYE_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>`;
 
-                if (pageData.length === 0) {
-                    noResults.style.display = 'block';
-                } else {
-                    noResults.style.display = 'none';
-                    pageData.forEach(santri => {
-                        const card = document.createElement('div');
-                        card.className = 'rapor-card';
-                        card.dataset.name = santri.name;
-                        card.innerHTML = `
-                            <img src="${santri.imageUrl}" alt="Rapor ${santri.name}" class="rapor-image">
-                            <div class="rapor-info">
-                                <h3 class="rapor-name">${santri.name}</h3>
-                                <p class="rapor-address">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    ${santri.address}
-                                </p>
-                            </div>
-                        `;
-                        galleryGrid.appendChild(card);
-                    });
-                }
-            },
+/* ─── RENDER GALLERY ─── */
+function renderGallery() {
+    const start = (state.page - 1) * state.perPage;
+    const pageItems = state.filtered.slice(start, start + state.perPage);
 
-            // Fungsi untuk merender paginasi
-            renderPagination() {
-                const { pagination } = this.elements;
-                const totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
+    el.grid.innerHTML = '';
 
-                pagination.innerHTML = '';
-                
-                if (totalPages <= 1 && this.filteredData.length > 0) {
-                    pagination.style.display = 'none';
-                    return;
-                } else {
-                    pagination.style.display = 'flex';
-                }
+    if (pageItems.length === 0) {
+        el.noResults.classList.remove('hidden');
+        el.paginationWrap.classList.add('hidden');
+        return;
+    }
 
-                const prevLi = document.createElement('li');
-                prevLi.className = `page-item ${this.currentPage === 1 ? 'disabled' : ''}`;
-                prevLi.innerHTML = `<a class="page-link" href="#" data-page="${this.currentPage - 1}"><i class="fas fa-chevron-left"></i></a>`;
-                pagination.appendChild(prevLi);
+    el.noResults.classList.add('hidden');
 
-                for (let i = 1; i <= totalPages; i++) {
-                    const li = document.createElement('li');
-                    li.className = `page-item ${i === this.currentPage ? 'active' : ''}`;
-                    li.innerHTML = `<a class="page-link" href="#" data-page="${i}">${i}</a>`;
-                    pagination.appendChild(li);
-                }
+    const frag = document.createDocumentFragment();
 
-                const nextLi = document.createElement('li');
-                nextLi.className = `page-item ${this.currentPage === totalPages ? 'disabled' : ''}`;
-                nextLi.innerHTML = `<a class="page-link" href="#" data-page="${this.currentPage + 1}"><i class="fas fa-chevron-right"></i></a>`;
-                pagination.appendChild(nextLi);
-            },
+    pageItems.forEach((s, i) => {
+        const card = document.createElement('div');
+        card.className = 'santri-card';
+        card.style.animationDelay = `${i * 40}ms`;
+        card.dataset.idx = santriData.indexOf(s);
 
-            // Fungsi untuk mengganti halaman
-            changePage(page) {
-                const totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage);
-                if (page < 1 || page > totalPages) return;
+        card.innerHTML = `
+            <div class="card-img-wrap">
+                <div class="card-shimmer"></div>
+                <img class="card-img" src="${s.img}" alt="Foto ${s.name}" loading="lazy">
+                <div class="card-overlay">
+                    <span class="card-overlay-text">${EYE_ICON} Lihat Detail</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-name">${s.name}</p>
+                <p class="card-addr">${PIN_ICON}<span>${s.address}</span></p>
+            </div>
+        `;
 
-                this.currentPage = page;
-                this.renderGallery();
-                this.renderPagination();
+        /* Lazy-load image — remove shimmer on load */
+        const img = card.querySelector('.card-img');
+        const shimmer = card.querySelector('.card-shimmer');
 
-                document.querySelector('.gallery-section').scrollIntoView({ behavior: 'smooth' });
-            },
+        if (img.complete && img.naturalWidth > 0) {
+            img.classList.add('loaded');
+            shimmer.remove();
+        } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+                shimmer.style.opacity = '0';
+                setTimeout(() => shimmer.remove(), 300);
+            }, { once: true });
+            img.addEventListener('error', () => {
+                shimmer.remove();
+                img.style.display = 'none';
+            }, { once: true });
+        }
 
-            // Fungsi untuk mengatur pencarian
-            setupSearch() {
-                let searchTimeout;
-                this.elements.searchInput.addEventListener('input', (e) => {
-                    clearTimeout(searchTimeout);
-                    searchTimeout = setTimeout(() => {
-                        const searchTerm = e.target.value.toLowerCase();
-                        this.filteredData = santriData.filter(santri =>
-                            santri.name.toLowerCase().includes(searchTerm) ||
-                            santri.address.toLowerCase().includes(searchTerm)
-                        );
-                        this.currentPage = 1;
-                        this.renderGallery();
-                        this.renderPagination();
-                    }, 300);
-                });
-            },
+        frag.appendChild(card);
+    });
 
-            // Fungsi untuk mengatur delegasi klik pada galeri
-            setupGalleryClicks() {
-                this.elements.galleryGrid.addEventListener('click', (e) => {
-                    const card = e.target.closest('.rapor-card');
-                    if (!card) return;
+    el.grid.appendChild(frag);
+    renderPagination();
+}
 
-                    const santriName = card.dataset.name;
-                    const santri = santriData.find(s => s.name === santriName);
-                    
-                    if (santri) {
-                        this.openModal(santri);
-                    }
-                });
-            },
+/* ─── RENDER PAGINATION ─── */
+function renderPagination() {
+    const totalPages = Math.ceil(state.filtered.length / state.perPage);
 
-            // Fungsi untuk mengatur klik pada paginasi
-            setupPaginationClicks() {
-                this.elements.pagination.addEventListener('click', (e) => {
-                    const pageLink = e.target.closest('.page-link');
-                    if (pageLink && !pageLink.parentElement.classList.contains('disabled')) {
-                        e.preventDefault();
-                        const pageNumber = parseInt(pageLink.dataset.page);
-                        this.changePage(pageNumber);
-                    }
-                });
-            },
+    if (totalPages <= 1) {
+        el.paginationWrap.classList.add('hidden');
+        return;
+    }
+    el.paginationWrap.classList.remove('hidden');
 
-            // Fungsi untuk membuka modal
-            openModal(santri) {
-                const { modalImage, modalName, modalAddress, imageModal } = this.elements;
-                modalImage.src = santri.imageUrl;
-                modalName.textContent = santri.name;
-                modalAddress.textContent = santri.address;
-                imageModal.show();
-            },
+    const p = state.page;
+    const items = [];
 
-            // Fungsi inisialisasi utama
-            init() {
-                this.filteredData = [...santriData];
-                this.renderGallery();
-                this.renderPagination();
-                this.setupSearch();
-                this.setupGalleryClicks();
-                this.setupPaginationClicks();
+    /* Prev */
+    items.push(makePageItem(p - 1, `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>`, p === 1));
 
-                // Tampilkan modal sambutan saat halaman dimuat
-                this.openModal(this.welcomeMessage);
-            }
+    /* Pages with ellipsis */
+    const pages = getPageNumbers(p, totalPages);
+    pages.forEach(n => {
+        if (n === '…') {
+            items.push('<li class="page-item disabled"><span class="page-link" style="border:none;background:none;color:var(--text-3)">…</span></li>');
+        } else {
+            items.push(makePageItem(n, n, false, n === p));
+        }
+    });
+
+    /* Next */
+    items.push(makePageItem(p + 1, `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>`, p === totalPages));
+
+    el.pagination.innerHTML = items.join('');
+}
+
+function makePageItem(page, label, disabled, active = false) {
+    const cls = `page-item${disabled ? ' disabled' : ''}${active ? ' active' : ''}`;
+    return `<li class="${cls}"><a class="page-link" href="#" data-p="${page}" ${disabled ? 'tabindex="-1"' : ''}>${label}</a></li>`;
+}
+
+function getPageNumbers(current, total) {
+    if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+    const arr = [];
+    arr.push(1);
+    if (current > 3) arr.push('…');
+    for (let i = Math.max(2, current - 1); i <= Math.min(total - 1, current + 1); i++) arr.push(i);
+    if (current < total - 2) arr.push('…');
+    arr.push(total);
+    return arr;
+}
+
+/* ─── SEARCH ─── */
+let searchTimer;
+el.search.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+        const term = el.search.value.trim().toLowerCase();
+        state.searchTerm = term;
+        state.filtered = term
+            ? santriData.filter(s =>
+                s.name.toLowerCase().includes(term) ||
+                s.address.toLowerCase().includes(term)
+            )
+            : [...santriData];
+        state.page = 1;
+
+        /* Clear btn visibility */
+        el.clearBtn.hidden = !term;
+
+        /* Result badge */
+        if (term) {
+            el.resultBadge.textContent = `${state.filtered.length} hasil`;
+            el.resultBadge.classList.add('show');
+        } else {
+            el.resultBadge.classList.remove('show');
+        }
+
+        renderGallery();
+    }, 250);
+});
+
+el.clearBtn.addEventListener('click', () => {
+    el.search.value = '';
+    el.search.dispatchEvent(new Event('input'));
+    el.search.focus();
+});
+
+/* ─── PAGINATION CLICK ─── */
+el.pagination.addEventListener('click', e => {
+    const link = e.target.closest('.page-link');
+    if (!link) return;
+    e.preventDefault();
+    const p = parseInt(link.dataset.p, 10);
+    if (!p || p === state.page) return;
+    const total = Math.ceil(state.filtered.length / state.perPage);
+    if (p < 1 || p > total) return;
+    state.page = p;
+    renderGallery();
+    window.scrollTo({ top: el.searchSticky.offsetTop - 8, behavior: 'smooth' });
+});
+
+/* ─── CARD CLICK → LIGHTBOX ─── */
+el.grid.addEventListener('click', e => {
+    const card = e.target.closest('.santri-card');
+    if (!card) return;
+    const s = santriData[parseInt(card.dataset.idx, 10)];
+    if (s) openLightbox(s);
+});
+
+/* ─── LIGHTBOX ─── */
+function openLightbox(s) {
+    el.lbName.textContent = s.name;
+    el.lbAddress.textContent = s.address;
+
+    /* Reset image */
+    el.lbImg.classList.remove('loaded');
+    el.imgShimmer.style.display = '';
+    el.lbImg.src = '';
+
+    el.lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    el.lbClose.focus();
+
+    /* Load image */
+    el.lbImg.src = s.img;
+    if (el.lbImg.complete && el.lbImg.naturalWidth > 0) {
+        el.lbImg.classList.add('loaded');
+        el.imgShimmer.style.display = 'none';
+    } else {
+        el.lbImg.onload = () => {
+            el.lbImg.classList.add('loaded');
+            el.imgShimmer.style.display = 'none';
         };
+        el.lbImg.onerror = () => {
+            el.imgShimmer.style.display = 'none';
+        };
+    }
+}
 
-        // Jalankan aplikasi saat dokumen dimuat
-        document.addEventListener('DOMContentLoaded', () => {
-            app.init();
-        });
+function closeLightbox() {
+    el.lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(() => { el.lbImg.src = ''; }, 350);
+}
 
-        // Solusi untuk mengatasi peringatan aria-hidden saat modal ditutup
-        document.addEventListener('hidden.bs.modal', function(event) {
-            // Hapus fokus dari elemen yang terakhir aktif
-            if (document.activeElement) {
-                document.activeElement.blur();
-            }
-            // Pastikan atribut aria-hidden pada modal dihapus
-            event.target.removeAttribute('aria-hidden');
-        });
+el.lbClose.addEventListener('click', closeLightbox);
+el.lbBackdrop.addEventListener('click', closeLightbox);
+
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && el.lightbox.classList.contains('open')) closeLightbox();
+});
+
+/* ─── SCROLL: sticky shadow ─── */
+const stickyObserver = new IntersectionObserver(
+    ([entry]) => el.searchSticky.classList.toggle('scrolled', !entry.isIntersecting),
+    { threshold: 0, rootMargin: '-1px 0px 0px 0px' }
+);
+stickyObserver.observe(document.querySelector('.site-header'));
+
+/* ─── INIT ─── */
+(function init() {
+    el.totalCount.textContent = santriData.length;
+    renderGallery();
+})();
